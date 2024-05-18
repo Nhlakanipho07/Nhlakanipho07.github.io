@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(55, 247, 183);
+    color: darkgreen;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    margin-bottom: 15;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    margin-bottom: 15;
+    font-weight: bold;
+}
+
+nav {
+    background-color: rgb(176, 250, 225);
+    color: darkgreen;
+}
+
+img {
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;
+}
