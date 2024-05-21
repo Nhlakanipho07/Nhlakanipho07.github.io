@@ -1,7 +1,7 @@
 body {
     background-color: rgb(55, 247, 183);
     color: darkgreen;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -9,23 +9,22 @@ h1 {
     font-family: "Arial", sans-serif;
     margin-bottom: 50px;
     font-weight: bold;
+    font-size: 45;
+    text-underline-position: below;
 }
 
-h2 {
+h2, a {
     font-family: "Arial", sans-serif;
     margin-bottom: 15;
     font-weight: bold;
-}
-
-h3 {
-    font-family: "Arial", sans-serif;
-    margin-bottom: 15;
-    font-weight: bold;
+    font-size: 30;
+    color: darkgreen;
 }
 
 nav {
     background-color: rgb(176, 250, 225);
     color: darkgreen;
+    width: 100%;
 }
 
 img {
@@ -35,11 +34,35 @@ img {
 p {
     font-family: "Arial", sans-serif;
     font-weight: normal;
-    margin-bottom: 15px;
+    padding-bottom: 25px;
     text-align: center;
+    font-size: 25;
+    width: 97%;
+    margin-left: 15px;
 }
 
-h2,
-a {
-    justify-items: left;
+.navbar{
+    width: 95%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part_1 {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tools {
+    display: flex;
+}
+
+section {
+    padding: 30px;
 }
