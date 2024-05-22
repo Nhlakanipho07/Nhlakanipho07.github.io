@@ -51,10 +51,10 @@ p {
 }
 
 .part_1 {
-    width: 95%;
+    width: 90%;
     display: flex;
     margin: auto;
-    padding: 15px 0;
+    padding: 15px;
     align-items: center;
     justify-content: space-between;
 }
@@ -65,4 +65,13 @@ p {
 
 section {
     padding: 30px;
+}
+
+.email {
+    display: flex;
+}
+
+h3 {
+    font-size: 26.5;
+    margin-left: 450px
 }
