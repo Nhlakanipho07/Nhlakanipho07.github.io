@@ -15,7 +15,7 @@ h1 {
 
 h2, a {
     font-family: "Arial", sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 30;
     color: darkgreen;
@@ -28,13 +28,13 @@ nav {
 }
 
 img {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 p {
     font-family: "Arial", sans-serif;
     font-weight: normal;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 25;
     width: 97%;
@@ -53,15 +53,15 @@ p {
 .part_1 {
     width: 90%;
     display: flex;
-    margin: auto;
-    padding: 15px;
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 45px;
     align-items: center;
     justify-content: space-between;
 }
 
 .tools {
     display: flex;
-    margin-top: 5px;
     padding-right: 20;
 }
 
@@ -90,4 +90,18 @@ h5 {
     font-weight: normal;
     padding: 0px;
     margin-bottom: 10px;
+}
+
+h6 {
+    font-family: "Arial", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 30;
+    color: darkgreen;
+}
+
+.contacts {
+    padding-top: 30px;
+    padding-bottom: 0px;
 }
