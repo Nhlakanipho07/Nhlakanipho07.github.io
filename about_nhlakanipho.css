@@ -158,15 +158,15 @@ p {
 
 
 .python_logo, .vscode_logo, .github_logo{
-    width: 150px;
-    height: 150px;
+    width: 225px;
+    height: 225px;
     object-fit: cover;
     filter: brightness(1);
 }
 
 .git_logo {
-    width:360px;
-    height: 150px;
+    width: 540px;
+    height: 225px;
     object-fit: cover;
     filter: brightness(1);
 }
@@ -177,8 +177,10 @@ section {
 
 .email {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0px;
 }
 
 
