@@ -1,29 +1,73 @@
+:root {
+    --background-color: #0A1128; /* Dark navy blue-black */
+    --font-color: #E5E5E5; /* Very light gray for strong contrast */
+    --accent-color: #1B2A49; /* Slightly lighter navy blue for accents */
+    --font-family: "Arial", sans-serif;
+}
+
+
+header {
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+
+
+header img {
+    border: 3px solid var(--accent-color); /* Highlight the profile picture */
+    border-radius: 15%;
+}
+
+
 body {
-    background-color: rgb(55, 247, 183);
-    color: darkgreen;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
     padding: 10px;
     text-align: center;
 }
+
+
+h1, h2, h3, h4, a {
+    color: var(--font-color);
+}
+
 
 h1 {
     font-family: "Arial", sans-serif;
     margin-bottom: 50px;
     font-weight: bold;
-    font-size: 45;
+    font-size: 45px;
     text-underline-position: below;
 }
 
-h2, a {
-    font-family: "Arial", sans-serif;
-    margin-bottom: 50px;
+
+h2 {
+    width: 100%;
+    text-align: center;
     font-weight: bold;
-    font-size: 30;
-    color: darkgreen;
+    font-size: 30px;
+    font-family: "Arial", sans-serif;
+    text-decoration: underline;
+    margin-bottom: 50px;
 }
 
+
+h3 {
+    font-size: 26.5px;
+}
+
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+
 nav {
-    background-color: rgb(176, 250, 225);
-    color: darkgreen;
+    background-color: var(--background-color);
+    color: var(--font-color);
     width: 100%;
 }
 
@@ -36,12 +80,12 @@ p {
     font-weight: normal;
     padding-bottom: 0px;
     text-align: center;
-    font-size: 25;
+    font-size: 25px;
     width: 97%;
     margin-left: 15px;
 }
 
-.navbar{
+.navbar {
     width: 95%;
     display: flex;
     margin: auto;
@@ -49,20 +93,82 @@ p {
     align-items: center;
     justify-content: space-between;
 }
-
 .part_1 {
-    width: 90%;
     display: flex;
-    margin: 0;
-    padding-left: 45px;
-    padding-right: 45px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-evenly; /* Equal spacing around items */
     align-items: center;
-    justify-content: space-between;
+    margin: 20px 0; /* Overall margin for the section */
+    gap: 20px; /* Consistent spacing between items */
 }
+
+.part_1 a {
+    flex: 1 1 30%; /* Each section takes up 30% of the width and adjusts on smaller screens */
+    text-align: center; /* Centers content within each section */
+    margin: 0 auto; /* Centers each section in the row */
+}
+
+.part_1 img {
+    max-width: 100%; /* Ensures images scale within their containers */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15%; /* Rounded corners for aesthetic appeal */
+}
+
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+
+.tools img, .part_1 img {
+    background-color: var(--accent-color); /* Adds subtle contrast around images */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.tools img {
+    margin: 10px;
+    object-fit: cover;
+}
+
 
 .tools {
     display: flex;
-    padding-right: 20;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools h2 {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+
+.tools div {
+    flex: 1 1 1 30%;
+    text-align: center;
+}
+
+
+.python_logo, .vscode_logo, .github_logo{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: brightness(1);
+}
+
+.git_logo {
+    width:360px;
+    height: 150px;
+    object-fit: cover;
+    filter: brightness(1);
 }
 
 section {
@@ -71,37 +177,18 @@ section {
 
 .email {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-h3 {
-    font-size: 26.5;
-    margin-left: 450px
-}
-
-h4 {
-    font-size: 20;
-    font-weight: normal;
-    margin-bottom: 34;
-    margin-top: 35;
-}
-
-h5 {
-    font-size: 20;
-    font-weight: normal;
-    padding: 0px;
-    margin-bottom: 10px;
-}
-
-h6 {
-    font-family: "Arial", sans-serif;
-    margin-bottom: 5px;
-    margin-top: 25px;
-    font-weight: bold;
-    font-size: 30;
-    color: darkgreen;
-}
 
 .contacts {
-    padding-top: 30px;
-    padding-bottom: 0px;
+    background-color: var(--accent-color);  
+    border-radius: 10px;
+    color: var(--font-color);
+}
+
+.contacts h2 {
+    margin-bottom: 10px;
+    padding-bottom: 0;
 }
