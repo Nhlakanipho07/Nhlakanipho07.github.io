@@ -131,9 +131,7 @@ p {
 }
 
 
-.python_logo, .vscode_logo, .github_logo, .docker_logo,
-.postgresql_logo, .mysql_logo, .html_logo, .css_logo, .rabbitmq_logo, 
-.sql_logo  {
+.python_logo, .vscode_logo, .github_logo, .css_logo, .sql_logo  {
     background-color: var(--accent-color);
     margin: 10px;
     object-fit: cover;
@@ -143,12 +141,13 @@ p {
 }
 
 
-.git_logo, .mongodb_logo, .pandas_logo, .flask_logo {
+.git_logo, .mongodb_logo, .pandas_logo, .flask_logo, .docker_logo, 
+.postgresql_logo, .html_logo, .mysql_logo, .rabbitmq_logo {
     background-color: #E5E5E5;
     margin: 10px;
     object-fit: cover;
-    padding: 10px;
     border-radius: 10px;
+    border: 10px solid var(--accent-color);
 }
 
 
@@ -173,7 +172,7 @@ p {
 
 
 .python_logo, .vscode_logo, .github_logo, .docker_logo, .mongodb_logo,
-.postgresql_logo, .mysql_logo, .html_logo, .css_logo, .rabbitmq_logo, 
+.mysql_logo,  .css_logo,  
 .sql_logo, .pandas_logo
  {
     width: 225px;
@@ -182,16 +181,27 @@ p {
     filter: brightness(1);
 }
 
-.flask_logo {
-    width: 178px;
-    height: 225px;
-    padding-right: 32px;
-    padding-left: 32px;
+.rabbitmq_logo, .postgresql_logo {
+    width: 210px;
+    height: 210px;
+    padding: 7.5px;
+    object-fit: cover;
+    filter: brightness(1);
+}
+
+.flask_logo, .html_logo {
+    width: 170px;
+    height: 218px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    padding-right: 27.5px;
+    padding-left: 27.5px;
 }
 
 .git_logo {
-    width: 540px;
-    height: 225px;
+    width: 521px;
+    height: 217px;
+    padding: 4px;
     object-fit: cover;
     filter: brightness(1.05);
 }
