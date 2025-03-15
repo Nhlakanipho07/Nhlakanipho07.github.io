@@ -1,7 +1,7 @@
 :root {
-    --background-color: #0A1128; /* Dark navy blue-black */
-    --font-color: #E5E5E5; /* Very light gray for strong contrast */
-    --accent-color: #1B2A49; /* Slightly lighter navy blue for accents */
+    --background-color: #0A1128; 
+    --font-color: #E5E5E5; 
+    --accent-color: #1B2A49; 
     --font-family: "Arial", sans-serif;
 }
 
@@ -13,7 +13,7 @@ header {
 
 
 header img {
-    border: 3px solid var(--accent-color); /* Highlight the profile picture */
+    border: 3px solid var(--accent-color);
     border-radius: 15%;
 }
 
@@ -95,23 +95,23 @@ p {
 }
 .part_1 {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    justify-content: space-evenly; /* Equal spacing around items */
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
     align-items: center;
-    margin: 20px 0; /* Overall margin for the section */
-    gap: 20px; /* Consistent spacing between items */
+    margin: 20px 0; 
+    gap: 20px; 
 }
 
 .part_1 a {
-    flex: 1 1 30%; /* Each section takes up 30% of the width and adjusts on smaller screens */
-    text-align: center; /* Centers content within each section */
-    margin: 0 auto; /* Centers each section in the row */
+    flex: 1 1 30%;
+    text-align: center; 
+    margin: 0 auto; 
 }
 
 .part_1 img {
-    max-width: 100%; /* Ensures images scale within their containers */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 15%; /* Rounded corners for aesthetic appeal */
+    max-width: 100%;
+    height: auto; 
+    border-radius: 15%;
 }
 
 
