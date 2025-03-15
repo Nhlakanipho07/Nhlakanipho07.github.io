@@ -143,7 +143,7 @@ p {
 }
 
 
-.git_logo, .mongodb_logo, .pandas_logo {
+.git_logo, .mongodb_logo, .pandas_logo, .flask_logo {
     background-color: #E5E5E5;
     margin: 10px;
     object-fit: cover;
@@ -182,6 +182,12 @@ p {
     filter: brightness(1);
 }
 
+.flask_logo {
+    width: 178px;
+    height: 225px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
 
 .git_logo {
     width: 540px;
