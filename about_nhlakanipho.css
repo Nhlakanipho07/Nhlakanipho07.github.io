@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --background-color: #0A1128; 
     --font-color: #E5E5E5; 
@@ -5,12 +6,34 @@
     --font-family: "Arial", sans-serif;
 }
 
+/* General Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 10px;
+}
 
+img {
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: var(--font-family);
+    font-weight: normal;
+    text-align: center;
+    font-size: 23px;
+    width: 97%;
+    margin-left: 15px;
+    padding-bottom: 0px;
+}
+
+/* Header Styling */
 header {
     color: var(--font-color);
     margin-bottom: 20px;
 }
-
 
 header img {
     border: 3px solid var(--accent-color);
@@ -22,222 +45,174 @@ header img {
     padding: 10px;
 }
 
-body {
-    background-color: var(--background-color);
-    color: var(--font-color);
-    font-family: var(--font-family);
-    padding: 10px;
-    text-align: center;
-}
-
-
-h1, h2, h3, h4, a {
-    color: var(--font-color);
-}
-
-
-h1 {
-    font-family: "Arial", sans-serif;
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 45px;
-    text-underline-position: below;
-}
-
-
-h2 {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    font-family: "Arial", sans-serif;
-    text-decoration: underline;
-    margin-bottom: 50px;
-}
-
-
-h3 {
-    font-size: 26.5px;
-}
-
-
-h4 {
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 34px;
-}
-
+/* Navbar Styling */
 .navbar {
     position: fixed;
     top: 0;
     right: 0;
+    background-color: rgba(27, 42, 73, 0.85);
+    border-radius: 0 0 0 10px;
     padding: 10px;
     z-index: 1000;
-    background-color: #1B2A49;
-    border-radius: 0 0 0 10px;
-  }
+}
 
-  .navbar a {
+.navbar a {
     color: white;
     text-decoration: none;
     margin: 0 5px;
     padding: 10px;
     font-weight: bold;
-  }
+}
 
-  .navbar a:hover {
+.navbar a:hover {
     background-color: #2E4A60;
-  }
-
-  section {
-    padding: 100px;
-    margin-top: 50px;
-  }
-
-
-img {
-    margin-bottom: 0px;
 }
 
-p {
-    font-family: "Arial", sans-serif;
-    font-weight: normal;
-    padding-bottom: 0px;
-    text-align: center;
-    font-size: 25px;
-    width: 97%;
-    margin-left: 15px;
+/* Section Styling */
+section {
+    padding: 5px;
+    margin-top: 20px;
 }
-
-
 
 .part_1 {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0; 
-    gap: 20px; 
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .part_1 a {
     flex: 1 1 30%;
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
 }
 
 .part_1 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
     border-radius: 15%;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+
+/* Typography Styling */
+h1, h2, h3, h4, a {
+    color: var(--font-color);
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-underline-position: below;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+/* About Me Section */
+
+.about-container {
+    display: flex;
+    gap: 10px;
+}
+
+.about-me p {
+    text-align: left;
 }
 
 
-.tools {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.CV-collumn {
+    flex: 1;
+    padding-top: 25px;
+}
+
+.cv-image {
+    border: 10px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+
+/* Tools Section */
+.tools-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    justify-items: center;
-}
-
-
-.part_1 img {
-    background-color: var(--accent-color);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-.python_logo, .vscode_logo, .github_logo, .css_logo, .sql_logo, .visitors
-{
-    background-color: var(--accent-color);
-    margin: 10px;
-    object-fit: cover;
-    padding: 10px;
-    border-radius: 10px;
-
-}
-
-
-.git_logo, .mongodb_logo, .pandas_logo, .flask_logo, .docker_logo, 
-.postgresql_logo, .html_logo, .sqlite_logo, .rabbitmq_logo, .jupyter_logo {
-    background-color: #E5E5E5;
-    margin: 10px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 10px solid var(--accent-color);
-}
-
-.python_logo, .vscode_logo, .github_logo, .docker_logo, .mongodb_logo,
-  .css_logo, .sql_logo, .pandas_logo, .jupyter_logo, .visitors
- {
-    width: 225px;
-    height: 225px;
-    object-fit: cover;
-    filter: brightness(1);
-}
-
-
-.tools {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .tools h2 {
     margin-bottom: 10px;
-    padding-bottom: 0;
     text-align: center;
 }
 
-
-.tools div {
-    flex: 1 1 1 30%;
-    text-align: center;
+/* Logo Styling */
+.python_logo, .vscode_logo, .github_logo, .css_logo, .sql_logo, .visitors {
+    background-color: var(--accent-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
+.git_logo, .mongodb_logo, .pandas_logo, .flask_logo, .docker_logo,
+.postgresql_logo, .html_logo, .sqlite_logo, .rabbitmq_logo, .jupyter_logo {
+    background-color: var(--font-color);
+    margin: 10px;
+    border: 10px solid var(--accent-color);
+    border-radius: 10px;
+    object-fit: cover;
+}
 
+/* Specific Logo Adjustments */
 .rabbitmq_logo, .postgresql_logo {
     width: 210px;
     height: 210px;
     padding: 7.5px;
-    object-fit: cover;
-    filter: brightness(1);
 }
 
 .flask_logo, .html_logo {
     width: 170px;
     height: 218px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
-    padding-right: 27.5px;
-    padding-left: 27.5px;
+    padding: 3.5px 27.5px;
 }
 
 .git_logo, .sqlite_logo {
     width: 521px;
     height: 217px;
     padding: 4px;
-    object-fit: cover;
     filter: brightness(1.05);
 }
 
-section {
-    padding: 20px;
+.python_logo, .vscode_logo, .github_logo, .docker_logo, .mongodb_logo, 
+.css_logo, .sql_logo, .pandas_logo, .jupyter_logo, .visitors, .cv-image {
+    width: 225px;
+    height: 225px;
+    filter: brightness(1);
 }
 
-.email {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px;
-}
-
-
+/* Contacts Section */
 .contacts {
     background-color: var(--accent-color);  
     border-radius: 10px;
@@ -246,7 +221,13 @@ section {
 
 .contacts h2 {
     margin-bottom: 10px;
-    padding-bottom: 0;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
 }
 
 .linkedin {
@@ -260,3 +241,64 @@ section {
     width: 50px;
     height: 50px;
 }
+
+        /* Projects Section Styling */
+        .project-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-column {
+            flex: 1;
+            background-color: var(--accent-color);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .project-column h2 {
+            padding-top: 0px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .project-image {
+            border-radius: 10px;
+            margin: 15px;             
+            width: 225px;
+            height: 225px;
+            filter: brightness(1);   
+        }
+        
+        .spec-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .spec-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+
+        .spec-list img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: var(--font-color);
+            margin-bottom: 10px;
+        }
+        
+        .project-column p {
+            margin: 5px;
+            font-size: 20px;
+            color: var(--font-color);
+            line-height: 1.5;
+            text-align: left;
+        }
+        
