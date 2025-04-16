@@ -297,25 +297,25 @@ h3 {
 
 .skills-description {
     margin: 5px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
     color: var(--font-color);
     line-height: 1.5;
     text-align: center;
+    padding-top: 20px;
 }
 
 
 .pr-collumn, .total-projects-collumn {
     flex: 1;
-    padding-top: 25px;
-    background-color: var(--accent-color);
+    padding-top: 0px;
     border-radius: 10px;
 }
 
 .pr-image, .total-projects-image {
+    background-color: var(--accent-color);
     border-radius: 10px;
     margin: 15px;             
     width: 225px;
     height: 225px;
-    filter: brightness(1);   
+    filter: brightness(1);  
 }
