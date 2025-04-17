@@ -282,7 +282,7 @@ h3 {
     align-items: flex-start;
     gap: 20px;
     margin-top: 20px;
-    /* background-color: var(--accent-color); */
+   
 }
 
 .pull-request p, .total-projects p {
@@ -296,26 +296,39 @@ h3 {
 }
 
 .skills-description {
-    margin: 5px;
-    font-size: 25px;
-    color: var(--font-color);
-    line-height: 1.5;
-    text-align: center;
-    padding-top: 20px;
-}
-
-
-.pr-collumn, .total-projects-collumn {
-    flex: 1;
-    padding-top: 0px;
-    border-radius: 10px;
-}
-
-.pr-image, .total-projects-image {
+    display: flex;
+    align-items: flex-start;
     background-color: var(--accent-color);
+    border-radius: 10px; 
+}
+
+.skills-description p {
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.pull-request {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+}
+
+.total-projects {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+}
+
+.pr-image, .total-projects-image, .skills-description img {
     border-radius: 10px;
     margin: 15px;             
-    width: 225px;
-    height: 225px;
+    width: 220px;
+    height: 220px;
     filter: brightness(1);  
 }
