@@ -111,6 +111,9 @@ h3 {
 
 .about-me p {
     text-align: left;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
@@ -196,24 +199,25 @@ h3 {
     margin-bottom: 10px;
 }
 
-.email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0px;
-}
 
-.linkedin {
+.contacts {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.linkedin img {
+.email_icon {
     border-radius: 10%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+    padding-right: 30px;
 }
+.linkedin_icon {
+    width: 65px;
+    height: 65px;
+}
+
 
         /* Projects Section Styling */
         .project-container {
@@ -325,10 +329,36 @@ h3 {
     background-color: var(--accent-color);
 }
 
-.pr-image, .total-projects-image, .skills-description img {
+.pr-image, .total-projects-image, .skills-description img, .data_entry_image {
     border-radius: 10px;
     margin: 15px;             
     width: 220px;
     height: 220px;
     filter: brightness(1);  
 }
+
+/* Volunteering Section */
+
+.work-description-section {
+    display: flex;
+}
+.work-description{
+    gap: 10px;
+}
+.work-container {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.work-container p, .work-container ul, .work-container h3 {
+    text-align: left;
+}
+
+.work-container ul {
+    font-size: 23px;
+}
+
