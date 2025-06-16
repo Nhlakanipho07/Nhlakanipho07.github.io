@@ -13,6 +13,7 @@ body {
     font-family: var(--font-family);
     text-align: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 img {
@@ -190,6 +191,10 @@ h3 {
 
 /* Contacts Section */
 .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--accent-color);  
     border-radius: 10px;
     color: var(--font-color);
@@ -200,12 +205,6 @@ h3 {
 }
 
 
-.contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .email_icon {
     border-radius: 10%;
     width: 40px;
@@ -213,6 +212,7 @@ h3 {
     padding: 13px;
     padding-right: 30px;
 }
+
 .linkedin_icon {
     width: 65px;
     height: 65px;
@@ -223,6 +223,7 @@ h3 {
         .project-container {
             display: flex;
             align-items: flex-start;
+            flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
         }
@@ -281,6 +282,7 @@ h3 {
         
 /* Additional Skills Section */
 
+
 .skills-container {
     display: flex;
     align-items: flex-start;
@@ -292,6 +294,7 @@ h3 {
 .pull-request p, .total-projects p {
     margin: 5px;
     font-size: 40px;
+    flex-wrap: wrap;
     color: var(--font-color);
     line-height: 1.5;
     text-align: left;
