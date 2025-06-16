@@ -233,6 +233,7 @@ h3 {
             background-color: var(--accent-color);
             padding: 20px;
             border-radius: 10px;
+        
         }
         
         .project-column h2 {
@@ -365,3 +366,35 @@ h3 {
     font-size: 23px;
 }
 
+/* Certificates */
+
+.certificates {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.certificate-column {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.certificate-column h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+.certificate-column p {
+    text-align: left;
+}
+
+.certificate-image {
+    background-color: white;
+    border-radius: 10px;
+    width: 225px;
+    height: 225px;
+    filter: brightness(1);   
+}
