@@ -110,6 +110,7 @@ h3 {
     gap: 10px;
     border-radius: 10px;
     background-color: var(--accent-color);
+    padding-right: 10px;
 }
 
 .about-me p {
