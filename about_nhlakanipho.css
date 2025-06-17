@@ -108,23 +108,24 @@ h3 {
 .about-container {
     display: flex;
     gap: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
 }
 
 .about-me p {
     text-align: left;
-    background-color: var(--accent-color);
-    padding: 10px;
-    border-radius: 10px;
 }
 
 
 .CV-collumn {
     flex: 1;
     padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
 }
 
 .cv-image {
-    border: 10px solid var(--accent-color);
+    /* border: 10px solid var(--accent-color); */
     border-radius: 10px;
 }
 
