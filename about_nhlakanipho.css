@@ -66,7 +66,7 @@ header img {
 }
 
 .navbar a:hover {
-    background-color: #2E4A60;
+    background-color: #56738b;
     border-radius: 25px;
 }
 
@@ -135,7 +135,7 @@ h3 {
 
 
 .cv-image:hover {
-    outline: 5px solid var(--background-color);
+    outline: 5px solid lightseagreen;
 }
 
 
@@ -262,7 +262,7 @@ h3 {
         }
 
         .project-image:hover {
-            outline: 5px solid var(--background-color);
+            outline: 5px solid lightseagreen;
         }
         
         .spec-list {
@@ -414,5 +414,5 @@ h3 {
 }
 
 .certificate-image:hover {
-    outline: 5px solid var(--background-color);
+    outline: 5px solid lightseagreen;
 }
